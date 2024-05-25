@@ -1,0 +1,4 @@
+<fonts>
+  <font id="StardewLarge" antialias="true" filename="stardew-lg.fnt" />
+  <font id="StardewSmall" antialias="true" filename="stardew-sm.fnt" />
+</fonts>

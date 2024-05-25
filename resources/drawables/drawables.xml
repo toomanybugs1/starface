@@ -1,0 +1,18 @@
+<drawables>
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+    <bitmap id="Background" filename="background.png" />
+    <bitmap id="Display" filename="display.png" />
+    <bitmap id="h0" filename="hand0.png" />
+    <bitmap id="h1" filename="hand7.png" />
+    <bitmap id="h2" filename="hand8.png" />
+    <bitmap id="h3" filename="hand9.png" />
+    <bitmap id="h4" filename="hand10.png" />
+    <bitmap id="h5" filename="hand11.png" />
+    <bitmap id="h6" filename="hand12.png" />
+    <bitmap id="h7" filename="hand13.png" />
+    <bitmap id="h8" filename="hand14.png" />
+    <bitmap id="h9" filename="hand15.png" />
+    <bitmap id="h10" filename="hand16.png" />
+    <bitmap id="h11" filename="hand17.png" />
+    <bitmap id="h12" filename="hand23.png" />
+</drawables>
