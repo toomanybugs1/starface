@@ -14,6 +14,7 @@ class starfaceView extends WatchUi.WatchFace {
     private var backgroundImg;
     private var faceDisplayImg;
     private var handImg;
+    private var notifImg;
 
     function initialize() {
         WatchFace.initialize();
@@ -25,6 +26,7 @@ class starfaceView extends WatchUi.WatchFace {
         fontSmall = Application.loadResource(Rez.Fonts.StardewSmall);
         backgroundImg = Application.loadResource(Rez.Drawables.Background);
         faceDisplayImg = Application.loadResource(Rez.Drawables.Display);
+        notifImg = Application.loadResource(Rez.Drawables.Notification);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -52,6 +54,7 @@ class starfaceView extends WatchUi.WatchFace {
         drawSteps(dc);
         drawHeartRate(dc);
         drawHand(dc, today);
+        drawNotif(dc);
     }
 
     function drawTime(dc as Dc, today) {
@@ -104,6 +107,16 @@ class starfaceView extends WatchUi.WatchFace {
             0,
             backgroundImg
         );
+    }
+
+    function drawNotif(dc as Dc) {
+        if (ActivityMonitor.getInfo().moveBarLevel != null && ActivityMonitor.getInfo().moveBarLevel > ActivityMonitor.MOVE_BAR_LEVEL_MIN) {
+                dc.drawBitmap(
+                0,
+                0,
+                notifImg
+            );
+        }
     }
 
     function drawClockFace(dc as Dc) {

@@ -3,6 +3,7 @@
     <bitmap id="Background" filename="background.png" />
     <bitmap id="Display" filename="display.png" />
     <bitmap id="h0" filename="hand0.png" />
+    <bitmap id="Notification" filename="notification.png" />
     <bitmap id="h1" filename="hand7.png" />
     <bitmap id="h2" filename="hand8.png" />
     <bitmap id="h3" filename="hand9.png" />
